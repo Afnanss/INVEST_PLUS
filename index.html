@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNB Investment Credit Card</title>
+    <title>SNB Comprehensive Page</title>
     <style>
+        
+
   body {
             display: flex;
             flex-direction: column;
@@ -353,6 +356,70 @@
             text-align: center;
             margin: 50px 40x;
         }
+        .products-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .products-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-box {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-box h3 {
+      font-size: 1.5rem;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .product-box p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .product-box button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-box button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .product-box {
+        width: 90%;
+      }
+    }
 
         
 /* Header styling */
@@ -398,9 +465,151 @@
         h3 {
             font-size: 1.2rem;
         }
+    
+/* Additional styles from SNB */
+
+        body {
+            font-family: "League Spartan", sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .products-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(120deg, #eaf4ea, #f4f9f4);
+            border-radius: 15px;
+            margin: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .products-section h2 {
+            font-size: 2.5rem;
+            color: #246635;
+            margin-bottom: 10px;
+        }
+
+        .products-section p {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-box {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 320px;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #e3efe3;
+        }
+
+        .product-box h3 {
+            font-size: 1.8rem;
+            color: #246635;
+            margin: 15px 0;
+        }
+
+        .product-box p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .product-box button {
+            background-color: #246635;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .product-box button:hover {
+            background-color: #14482e;
+            transform: translateY(-2px);
+        }
+
+        .investment-cash-section {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            margin: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .investment-cash-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #246635;
+        }
+
+        .investment-cash-section table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .investment-cash-section th {
+            background-color: #246635;
+            color: #ffffff;
+            font-size: 1rem;
+            padding: 15px 20px;
+        }
+
+        .investment-cash-section td {
+            padding: 15px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .investment-cash-section tr:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        .investment-cash-section tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .investment-cash-section tr:hover {
+            background-color: #e0e0e0;
+        }
+    
+
     </style>
 </head>
 <body>
+    <!-- Corrected Body Content -->
+    
     <div class="component-sub-content">
         <div class="menu-icons">
             <img src="assets/images/menu-icon.png" alt="Menu Icon">
@@ -518,7 +727,38 @@
             </div>
         </div>
     </section>
+    <script>
+        function learnMore(productName) {
+          alert(`Learn more about our ${productName}!`);
+        }
+      </script>
+        <!-- Enhanced Product Section with Images -->
+        <section class="products-section">
+            <h2>Explore Our Personal Finance and Credit Card Products</h2>
+            <p>Discover innovative solutions tailored to your financial needs with SNB.</p>
+            <div class="products-container">
+                <div class="product-box">
+                    <img src="assets/images/green.png" alt="Green Card">
+                    <h3>Green Card</h3>
+                    <p>A sustainable credit card option for eco-conscious individuals.</p>
+		<button onclick="downloadFile('GreenCreditCard.pdf')">Learn More</button>
+                </div>
+                <div class="product-box">
+                    <img src="assets/images/student.png" alt="Student Loan">
+                    <h3>Student Loan</h3>
+                    <p>Flexible financing options designed for students.</p>
+		<button onclick="downloadFile('MasterStudentLoans.pdf')">Learn More</button>
+                </div>
+                <div class="product-box">
+                    <img src="assets/images/stay.png" alt="Stay Card">
+                    <h3>Stay Card</h3>
+                    <p>Your reliable travel and stay companion.</p>
 
+                    <button onclick="learnMore('Stay Card')">Learn More</button>
+                </div>
+            </div>
+        </section>
+    
     
     <script>
         // JavaScript to toggle FAQ answers
@@ -538,11 +778,29 @@
         });
     </script>
 
-    
+<script>
+function downloadFile(fileName) {
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the href to the file path (relative to the assets/images folder)
+    link.href = `assets/images/${fileName}`;
+    // Set the download attribute to force download
+    link.download = fileName;
+    // Append the link to the document body
+    document.body.appendChild(link);
+    // Trigger the download
+    link.click();
+    // Remove the link from the DOM
+    document.body.removeChild(link);
+}
+</script>
+
   <!-- FOOTER -->
   <footer class="page-footer">
     Powered by Afnan Almuqbil ♡ | Rowad 13 | SNB
   </footer>
+
+
 
 
 </body>
